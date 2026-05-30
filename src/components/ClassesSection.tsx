@@ -1030,80 +1030,6 @@ const CLASS_3_ELABORATION_EXERCISES: Exercise[] = [
   },
 ]
 
-const DIRECTIONS_TEMPLATE = [
-  { id: 1, icon: "Zap", title: "Беглость", description: "Умение быстро генерировать идеи и находить много вариантов решения" },
-  { id: 2, icon: "Shuffle", title: "Гибкость", description: "Способность переключаться между разными категориями и подходами" },
-  { id: 3, icon: "Sparkles", title: "Оригинальность", description: "Создание необычных, нестандартных идей и решений" },
-  { id: 4, icon: "Layers", title: "Разработанность", description: "Умение детально прорабатывать и дополнять идеи" },
-]
-
-const CLASSES: ClassData[] = [
-  {
-    id: "class-1",
-    grade: "1 класс",
-    emoji: "🌱",
-    badgeColor: "bg-rose-500/10 text-rose-400 border-rose-500/20",
-    iconBg: "bg-rose-500/10",
-    iconColor: "text-rose-400",
-    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
-      ...d,
-      exercises:
-        i === 0 ? CLASS_1_FLUENCY_EXERCISES :
-        i === 1 ? CLASS_1_FLEXIBILITY_EXERCISES :
-        i === 2 ? CLASS_1_ORIGINALITY_EXERCISES :
-        CLASS_1_ELABORATION_EXERCISES,
-    })),
-  },
-  {
-    id: "class-2",
-    grade: "2 класс",
-    emoji: "🌿",
-    badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-    iconBg: "bg-blue-500/10",
-    iconColor: "text-blue-400",
-    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
-      ...d,
-      exercises:
-        i === 0 ? CLASS_2_FLUENCY_EXERCISES :
-        i === 1 ? CLASS_2_FLEXIBILITY_EXERCISES :
-        i === 2 ? CLASS_2_ORIGINALITY_EXERCISES :
-        CLASS_2_ELABORATION_EXERCISES,
-    })),
-  },
-  {
-    id: "class-3",
-    grade: "3 класс",
-    emoji: "🌳",
-    badgeColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
-    iconBg: "bg-amber-500/10",
-    iconColor: "text-amber-400",
-    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
-      ...d,
-      exercises:
-        i === 0 ? CLASS_3_FLUENCY_EXERCISES :
-        i === 1 ? CLASS_3_FLEXIBILITY_EXERCISES :
-        i === 2 ? CLASS_3_ORIGINALITY_EXERCISES :
-        CLASS_3_ELABORATION_EXERCISES,
-    })),
-  },
-  {
-    id: "class-4",
-    grade: "4 класс",
-    emoji: "🏆",
-    badgeColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-    iconBg: "bg-purple-500/10",
-    iconColor: "text-purple-400",
-    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
-      ...d,
-      exercises:
-        i === 0 ? CLASS_4_FLUENCY_EXERCISES :
-        i === 1 ? CLASS_4_FLEXIBILITY_EXERCISES :
-        i === 2 ? CLASS_4_ORIGINALITY_EXERCISES :
-        CLASS_4_ELABORATION_EXERCISES,
-    })),
-  },
-]
-
 const CLASS_4_FLUENCY_EXERCISES: Exercise[] = [
   {
     title: "«Стимуляция потока мыслей» (ассоциации к яблоку)",
@@ -1255,8 +1181,8 @@ const CLASS_4_FLEXIBILITY_EXERCISES: Exercise[] = [
     form: "В парах",
     material: "Карточки (первый снег – отменили уроки)",
     subject: "Окружающий мир, Литературное чтение",
-    task: "«Соедините события: «выпал первый снег» и «отменили уроки». Постройте цепочку из 6 звеньев. Например: выпал снег → дворник взялся чистить дорожки → сломал лопату → пошёл в магазин → встретил директора школы → директор объявил отмену уроков. Придумайте другую цепочку».",
-    teacherNote: "Оценивается длина и нестандартность. Другая пара: «разбилась кружка» – «купили нового кота».",
+    task: "«Постройте причинно-следственную цепочку из 5–7 шагов: «Первый снег → дети выбежали кататься → забыли учебники → не сделали уроки → получили двойки → расстроили родителей → родители купили им санки → дети снова выбежали»».",
+    teacherNote: "Поощрять нелинейные цепочки. Ограничить: нельзя повторять звенья.",
   },
   {
     title: "«Конец и начало» (сложные)",
@@ -1433,6 +1359,80 @@ const CLASS_4_ELABORATION_EXERCISES: Exercise[] = [
     subject: "ИЗО, Литературное чтение",
     task: "«Нарисуй «сарказм» или «зависть» в виде абстрактной картины. Используй линии, пятна, сочетания цветов. Потом напиши 2–3 предложения, объясняющих, почему ты выбрал именно такие формы и цвета. Например: «Зависть – это зелёные острые осколки, потому что она режет изнутри»».",
     teacherNote: "Оценивается нестандартность символики и развёрнутость комментария.",
+  },
+]
+
+const DIRECTIONS_TEMPLATE = [
+  { id: 1, icon: "Zap", title: "Беглость", description: "Умение быстро генерировать идеи и находить много вариантов решения" },
+  { id: 2, icon: "Shuffle", title: "Гибкость", description: "Способность переключаться между разными категориями и подходами" },
+  { id: 3, icon: "Sparkles", title: "Оригинальность", description: "Создание необычных, нестандартных идей и решений" },
+  { id: 4, icon: "Layers", title: "Разработанность", description: "Умение детально прорабатывать и дополнять идеи" },
+]
+
+const CLASSES: ClassData[] = [
+  {
+    id: "class-1",
+    grade: "1 класс",
+    emoji: "🌱",
+    badgeColor: "bg-rose-500/10 text-rose-400 border-rose-500/20",
+    iconBg: "bg-rose-500/10",
+    iconColor: "text-rose-400",
+    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
+      ...d,
+      exercises:
+        i === 0 ? CLASS_1_FLUENCY_EXERCISES :
+        i === 1 ? CLASS_1_FLEXIBILITY_EXERCISES :
+        i === 2 ? CLASS_1_ORIGINALITY_EXERCISES :
+        CLASS_1_ELABORATION_EXERCISES,
+    })),
+  },
+  {
+    id: "class-2",
+    grade: "2 класс",
+    emoji: "🌿",
+    badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    iconBg: "bg-blue-500/10",
+    iconColor: "text-blue-400",
+    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
+      ...d,
+      exercises:
+        i === 0 ? CLASS_2_FLUENCY_EXERCISES :
+        i === 1 ? CLASS_2_FLEXIBILITY_EXERCISES :
+        i === 2 ? CLASS_2_ORIGINALITY_EXERCISES :
+        CLASS_2_ELABORATION_EXERCISES,
+    })),
+  },
+  {
+    id: "class-3",
+    grade: "3 класс",
+    emoji: "🌳",
+    badgeColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+    iconBg: "bg-amber-500/10",
+    iconColor: "text-amber-400",
+    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
+      ...d,
+      exercises:
+        i === 0 ? CLASS_3_FLUENCY_EXERCISES :
+        i === 1 ? CLASS_3_FLEXIBILITY_EXERCISES :
+        i === 2 ? CLASS_3_ORIGINALITY_EXERCISES :
+        CLASS_3_ELABORATION_EXERCISES,
+    })),
+  },
+  {
+    id: "class-4",
+    grade: "4 класс",
+    emoji: "🏆",
+    badgeColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    iconBg: "bg-purple-500/10",
+    iconColor: "text-purple-400",
+    directions: DIRECTIONS_TEMPLATE.map((d, i) => ({
+      ...d,
+      exercises:
+        i === 0 ? CLASS_4_FLUENCY_EXERCISES :
+        i === 1 ? CLASS_4_FLEXIBILITY_EXERCISES :
+        i === 2 ? CLASS_4_ORIGINALITY_EXERCISES :
+        CLASS_4_ELABORATION_EXERCISES,
+    })),
   },
 ]
 
