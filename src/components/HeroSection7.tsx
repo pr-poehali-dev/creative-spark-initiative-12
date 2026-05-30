@@ -16,7 +16,7 @@ export function HeroSection7() {
           {[
             { num: "4", label: "Класса" },
             { num: "4", label: "Направления" },
-            { num: "∞", label: "Упражнений" },
+            { num: "50+", label: "Упражнений" },
           ].map(({ num, label }) => (
             <div key={label} className="flex flex-col items-center">
               <span className="text-4xl font-bold text-primary">{num}</span>
