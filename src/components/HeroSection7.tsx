@@ -1,39 +1,28 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-
 export function HeroSection7() {
   return (
     <section className="bg-muted pattern-1 py-16 lg:py-24" aria-labelledby="hero-heading">
-      <div className="container px-6 flex flex-col items-center gap-12 lg:gap-16 mx-auto">
-        <div className="flex gap-12 lg:gap-16">
-          <div className="flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8">
-            <h1 id="hero-heading" className="text-foreground text-3xl lg:text-5xl font-bold flex-1">
-              Работай умнее, а не больше со <span className="text-primary">СмарФлоу</span>
-            </h1>
-            <div className="flex-1 w-full flex flex-col gap-8">
-              <p className="text-muted-foreground text-base lg:text-lg">
-                Автоматизируй рабочие процессы, упрощай задачи и работай в команде без лишних усилий. Все инструменты в одной платформе для максимальной продуктивности.
-              </p>
-
-              <div className="flex flex-col lg:flex-row gap-3">
-                <Button>Попробовать бесплатно</Button>
-                <Button variant="ghost">
-                  Узнать больше
-                  <ArrowRight className="ml-2" />
-                </Button>
-              </div>
-            </div>
-          </div>
+      <div className="container px-6 flex flex-col items-center gap-6 mx-auto text-center">
+        <div className="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-1.5 rounded-full text-sm font-medium">
+          ✏️ Начальная школа · 1–4 класс
         </div>
-        <div className="w-full overflow-hidden rounded-xl border bg-background shadow-xl">
-          <AspectRatio ratio={16 / 9}>
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero%20image-BfDDyqA7gEJi5nCcYfKEbZOJR8pYrr.png"
-              alt="Интерфейс СмартФлоу со статистикой заказов и метриками доходов"
-              className="object-cover w-full h-full"
-            />
-          </AspectRatio>
+        <h1 id="hero-heading" className="text-foreground text-3xl lg:text-5xl font-bold max-w-3xl">
+          Сборник креативных упражнений{" "}
+          <span className="text-primary">для начальной школы</span>
+        </h1>
+        <p className="text-muted-foreground text-base lg:text-lg max-w-2xl">
+          Интерактивный сборник упражнений для учеников 1–4 класса. Четыре направления в каждом классе — выберите нужное и приступайте к творческой работе.
+        </p>
+        <div className="flex flex-wrap justify-center gap-6 mt-4">
+          {[
+            { num: "4", label: "Класса" },
+            { num: "16", label: "Направлений" },
+            { num: "∞", label: "Упражнений" },
+          ].map(({ num, label }) => (
+            <div key={label} className="flex flex-col items-center">
+              <span className="text-4xl font-bold text-primary">{num}</span>
+              <span className="text-muted-foreground text-sm">{label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
