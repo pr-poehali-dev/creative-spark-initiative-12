@@ -15,7 +15,7 @@ export function HeroSection7() {
         <div className="flex flex-wrap justify-center gap-6 mt-4">
           {[
             { num: "4", label: "Класса" },
-            { num: "16", label: "Направлений" },
+            { num: "4", label: "Направления" },
             { num: "∞", label: "Упражнений" },
           ].map(({ num, label }) => (
             <div key={label} className="flex flex-col items-center">
