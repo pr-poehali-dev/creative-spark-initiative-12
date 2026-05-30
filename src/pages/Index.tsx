@@ -1,17 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { LpNavbar1 } from "@/components/LpNavbar1"
+import { HeroSection7 } from "@/components/HeroSection7"
+import { FeatureSection9 } from "@/components/FeatureSection9"
+import { FeatureSection3 } from "@/components/FeatureSection3"
+import { TestimonialsSection5 } from "@/components/TestimonialsSection5"
+import { PricingSection4 } from "@/components/PricingSection4"
+import { FaqSection1 } from "@/components/FaqSection1"
+import { Footer2 } from "@/components/Footer2"
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
-      <span className="absolute bottom-8 left-1/2 -translate-x-1/2 inline-block bg-[#FF6637] text-white text-sm px-4 py-2 rounded-full whitespace-nowrap">
-        Подождите 5 минут, Юра создает первую версию проекта с нуля
-      </span>
-    </div>
-  );
-};
+    <main>
+      <LpNavbar1 />
+      <HeroSection7 />
+      <FeatureSection9 />
+      <FeatureSection3 />
+      <TestimonialsSection5 />
+      <PricingSection4 />
+      <FaqSection1 />
+      <Footer2 />
+    </main>
+  )
+}
 
-export default Index;
+export default Index
